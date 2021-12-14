@@ -8,8 +8,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout
+      - uses: actions/checkout@v2
 
-      - uses: eahenle/actionstest/test
+      - uses: eahenle/actionstest/test@master
         with:
           time_limit_minutes: ${{ env.time_limit_minutes }}

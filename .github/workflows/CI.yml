@@ -1,0 +1,12 @@
+on:
+  workflow_dispatch:
+
+env:
+  time_limit_minutes: 30
+
+jobs:
+  test:
+    steps:
+      - uses: eahenle/actionstest/test@master
+        with:
+          time_limit_minutes: ${{ env.time_limit_minutes }}

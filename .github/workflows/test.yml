@@ -8,5 +8,4 @@ on:
 jobs:
   test:
     steps:
-      run: echo ${{ inputs.time_limit_minutes }}
-      
+      - run: echo ${{ inputs.time_limit_minutes }}

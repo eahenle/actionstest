@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: eahenle/actionstest/test@master
+      - uses: ./github/actions/test@v1
         with:
           time_limit_minutes: ${{ env.time_limit_minutes }}
